@@ -5,13 +5,9 @@ using UnityEngine;
 
 public class Trigger : MonoBehaviour
 {
-    [SerializeField] private BoxCollider2D bx;
-    private void Update()
-    {
-        OnTriggerEnter2D(bx);
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        Debug.Log("Trgger");
+        Time.timeScale = 0;
     }
 }
