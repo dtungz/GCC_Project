@@ -1,21 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using Unity.VisualScripting;
 
 public class UiManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI scoreUI;
-
-    GameManager gm;
-
+    private GameManager gm;
+    private string currentScore = "";
     private void Start()
     {
         gm = GameManager.Instance;
+        UpdateScoreUI(gm.PrettyScore());
     }
-    private void OnGUI()
+    private void Update()
     {
-        scoreUI.text = gm.PrettyScore();
+        string score = gm.PrettyScore();
+        if (score != currentScore)
+        {
+            UpdateScoreUI(score);
+            currentScore = score;
+        }
+    }
+    private void UpdateScoreUI(string score)
+    {
+        scoreUI.text = score;
     }
 }
