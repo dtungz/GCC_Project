@@ -9,5 +9,6 @@ public class Trigger : MonoBehaviour
     {
         Debug.Log("Trigger");
         Time.timeScale = 0;
+        GameManager.Instance.GameOver();
     }
 }
