@@ -7,7 +7,7 @@ public class Trigger : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Trgger");
+        Debug.Log("Trigger");
         Time.timeScale = 0;
     }
 }

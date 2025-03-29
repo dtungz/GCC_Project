@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 
-public class ObsSpawner : MonoBehaviour
+public class ObstacleSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] obsPrefabs;
     public float obsSpawnTime = 3f;

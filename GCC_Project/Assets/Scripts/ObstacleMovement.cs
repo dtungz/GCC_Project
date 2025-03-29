@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObsMove : MonoBehaviour
+public class ObstacleMovement : MonoBehaviour
 {
     public float speed = 2f;
     void Update()
