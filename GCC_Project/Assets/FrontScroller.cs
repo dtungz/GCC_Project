@@ -1,16 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class FarMountainScroller : MonoBehaviour
+public class FrontScroller : MonoBehaviour
 {
-    [SerializeField] private GameObject[] farMountains;
-    [SerializeField] private float scrollSpeed = 0.75f;
+    [SerializeField] private GameObject[] Fronts;
+    [SerializeField] private float scrollSpeed = 1.5f;
     private float width;
     float getRightMost()
     {
-        float max = farMountains[0].transform.position.x;
-        foreach (GameObject go in farMountains)
+        float max = Fronts[0].transform.position.x;
+        foreach (GameObject go in Fronts)
         {
             if (go.transform.position.x > max)
             {
@@ -21,11 +22,11 @@ public class FarMountainScroller : MonoBehaviour
     }
     void Start()
     {
-        width = farMountains[0].GetComponent<SpriteRenderer>().bounds.size.x;
+        width = Fronts[0].GetComponent<SpriteRenderer>().bounds.size.x;
     }
     void Update()
     {
-        foreach (GameObject mountain in farMountains)
+        foreach (GameObject mountain in Fronts)
         {
             mountain.transform.position += Vector3.left * scrollSpeed * Time.deltaTime;
             if (mountain.transform.position.x < -width - 1.5f)
