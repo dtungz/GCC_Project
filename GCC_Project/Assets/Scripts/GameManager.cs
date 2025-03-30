@@ -15,9 +15,7 @@ public class GameManager : MonoBehaviour
     }
 
     #endregion
-
     public float currentScore = 0f;
-
     public bool isPlaying = false;
 
     private void Start()
