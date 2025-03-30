@@ -10,6 +10,7 @@ public class PlayerManager : MonoBehaviour
     public bool isInvincible;
     public bool isShrinked;
     public bool canBeTrigger;
+    private Vector3 originalScale;
 
     void Move()
     {
@@ -19,15 +20,17 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    IEnumerator SizeReset()
+    {
+        yield return new WaitForSeconds(1f);
+        transform.localScale = originalScale;
+        isShielded = false;
+    }
     void Shrink()
     {
-        if (isShrinked)
-        {
-            transform.localScale = new Vector3(transform.localScale.x * 0.5f, transform.localScale.y * 0.5f,
-                transform.localScale.z);
-            isShrinked = false;
-        }
-        else return;
+        if (!isShrinked) return;
+        transform.localScale = new Vector3(transform.localScale.x * 0.5f, transform.localScale.y * 0.5f, transform.localScale.z);
+        StartCoroutine(SizeReset());
     }
     void Start()
     {
@@ -36,10 +39,10 @@ public class PlayerManager : MonoBehaviour
         isInvincible = false;
         isShrinked = false;
         canBeTrigger = true;
+        originalScale = transform.localScale;
     }
     void Update()
     {
         Move();
-        Shrink();
     }
 }
