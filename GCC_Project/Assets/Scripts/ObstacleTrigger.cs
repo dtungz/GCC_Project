@@ -27,8 +27,11 @@ public class ObstacleTrigger : MonoBehaviour
                 pm.isShielded = false;
                 return;
             }
+            else
+            {
+                Time.timeScale = 0;
+                GameManager.Instance.GameOver();
+            }
         }
-        Time.timeScale = 0;
-        GameManager.Instance.GameOver();
     }
 }
