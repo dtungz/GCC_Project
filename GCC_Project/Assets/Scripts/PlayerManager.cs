@@ -19,19 +19,40 @@ public class PlayerManager : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, speed);
         }
     }
-
     IEnumerator SizeReset()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(8f);
         transform.localScale = originalScale;
-        isShielded = false;
+        isShrinked = false;
     }
-    void Shrink()
+
+    IEnumerator InvincibleReset()
     {
-        if (!isShrinked) return;
-        transform.localScale = new Vector3(transform.localScale.x * 0.5f, transform.localScale.y * 0.5f, transform.localScale.z);
-        StartCoroutine(SizeReset());
+        yield return new WaitForSeconds(8f);
+        isInvincible = false;
     }
+    private void Invincible()
+    {
+        if (isInvincible)
+        {
+            if (InvincibleReset() != null) StopCoroutine(InvincibleReset());
+            StartCoroutine(InvincibleReset());
+        }
+        else return;
+    }
+    private void Shrink()
+    {
+        if (isShrinked && transform.localScale.x > originalScale.x * 0.5f)
+        {
+            transform.localScale = new Vector3(
+                originalScale.x * 0.5f, 
+                originalScale.y * 0.5f,
+                originalScale.z
+            );
+            StartCoroutine(SizeReset());
+        }
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -41,8 +62,12 @@ public class PlayerManager : MonoBehaviour
         canBeTrigger = true;
         originalScale = transform.localScale;
     }
+
     void Update()
     {
         Move();
+        if (isShrinked) Shrink();
+        Invincible();
     }
 }
+

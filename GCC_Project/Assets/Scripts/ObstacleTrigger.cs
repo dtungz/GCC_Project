@@ -6,7 +6,7 @@ using UnityEngine;
 public class ObstacleTrigger : MonoBehaviour
 {
     private PlayerManager pm;
-    IEnumerator EnableCollisionAfterDelay()
+    IEnumerator CollsionReset()
     {
         yield return new WaitForSeconds(1f);
         if (!pm.isInvincible) pm.canBeTrigger = true;
@@ -23,7 +23,7 @@ public class ObstacleTrigger : MonoBehaviour
             if (pm.isShielded && pm.canBeTrigger)
             {
                 pm.canBeTrigger = false;
-                StartCoroutine(EnableCollisionAfterDelay());
+                StartCoroutine(CollsionReset());
                 return;
             }
         }
