@@ -349,6 +349,7 @@ GameObject:
   - component: {fileID: 6691176376420035422}
   - component: {fileID: 2198055134044385982}
   - component: {fileID: 5631201744698718716}
+  - component: {fileID: -3888478602642533575}
   m_Layer: 0
   m_Name: Spikeball_1
   m_TagString: Obstacles
@@ -407,7 +408,7 @@ EdgeCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -523,6 +524,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-3888478602642533575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4993402788222416186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8835d0e518eb0544a8a9f064f70f2721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
 --- !u!1 &6688963649462521530
 GameObject:
   m_ObjectHideFlags: 0

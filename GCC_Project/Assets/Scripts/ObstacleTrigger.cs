@@ -24,6 +24,7 @@ public class ObstacleTrigger : MonoBehaviour
             {
                 pm.canBeTrigger = false;
                 StartCoroutine(CollsionReset());
+                pm.isShielded = false;
                 return;
             }
         }
