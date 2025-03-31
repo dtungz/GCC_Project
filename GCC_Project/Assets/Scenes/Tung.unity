@@ -491,9 +491,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obsPrefabs:
-  - {fileID: 4332394124570231166, guid: 8f9441fb23be4e844965c192b40535b0, type: 3}
+  - {fileID: 3620917929092381475, guid: 8d4503844492d1849898aefac847d624, type: 3}
   - {fileID: 6066291970751178973, guid: 258584c5668882c408677c8730c755f7, type: 3}
   - {fileID: 8004362714643245641, guid: a339532b384662b4bb8f5e2fa53af765, type: 3}
+  - {fileID: 4993402788222416186, guid: 94c2a7e4d57aee64a8f9cf225c76ed99, type: 3}
+  - {fileID: 5495718868414802375, guid: 5859180489fc0274583a03a9c0b1e740, type: 3}
+  - {fileID: 259613055789064173, guid: 125a932426e196c4194012fa07192078, type: 3}
   obsSpawnTime: 2
 --- !u!4 &1517439319
 Transform:
@@ -521,11 +524,11 @@ GameObject:
   - component: {fileID: 1760405584}
   - component: {fileID: 1760405583}
   - component: {fileID: 1760405585}
-  - component: {fileID: 1760405587}
   - component: {fileID: 1760405586}
+  - component: {fileID: 1760405587}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -654,8 +657,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4fbd17a5fd8884bbc9560008d49b70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 15
   rb: {fileID: 1760405587}
+  isShielded: 0
+  isInvincible: 0
+  isShrinked: 0
+  canBeTrigger: 0
 --- !u!50 &1760405587
 Rigidbody2D:
   serializedVersion: 4
@@ -668,10 +675,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 8
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -679,10 +686,10 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 1
-  m_SleepingMode: 0
-  m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1802848996
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,7 +722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84adae21c44a13749b399fd3b61e4d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreUI: {fileID: 0}
+  scoreUI: {fileID: 627126312}
 --- !u!114 &1802848998
 MonoBehaviour:
   m_ObjectHideFlags: 0
