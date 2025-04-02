@@ -1,19 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.VFX;
 
-public class ObstacleSpawner : MonoBehaviour
+public class ItemSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject[] obsPrefabs;
+    [SerializeField] private GameObject[] ItemsPrefabs;
     private GameManager gm;
-    public float obsSpawnTime = 3f;
+    public float obsSpawnTime = 15f;
     private float countDown;
-
-    private void Start()
-    {
-        gm = GameManager.Instance;
-    }
     private void Update()
     {
         if(GameManager.Instance.isPlaying)
@@ -23,7 +19,6 @@ public class ObstacleSpawner : MonoBehaviour
     }
     private void SpawnLoop()
     {
-        if (gm.currentScore % 25.0f == 0) obsSpawnTime -= 0.1f;
         countDown += Time.deltaTime;
         if(countDown >= obsSpawnTime)
         {
@@ -33,7 +28,7 @@ public class ObstacleSpawner : MonoBehaviour
     }
     private void Spawn()
     {
-        GameObject obsSpawn = obsPrefabs[Random.Range(0,obsPrefabs.Length)];
+        GameObject obsSpawn = ItemsPrefabs[Random.Range(0,ItemsPrefabs.Length)];
         GameObject posSpawn = Instantiate(obsSpawn,transform.position,Quaternion.identity);
     }
 }

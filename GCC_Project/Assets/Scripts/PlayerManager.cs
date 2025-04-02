@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    public float speed = 15f;
+    public float speed = 10f;
     [SerializeField] Rigidbody2D rb;
     public bool isShielded;
     public bool isInvincible;
@@ -16,7 +16,7 @@ public class PlayerManager : MonoBehaviour
     {
         if(Input.GetButton("Jump"))
         {
-            rb.velocity = new Vector2(rb.velocity.x, speed);
+            rb.velocity = new Vector2(0f, speed);
         }
     }
     IEnumerator SizeReset()
