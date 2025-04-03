@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 879141241090420815}
+  - component: {fileID: 5213258626639587624}
   m_Layer: 0
   m_Name: Shrinker_6
   m_TagString: Untagged
@@ -32,6 +33,19 @@ Transform:
   - {fileID: 3692430231865653590}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5213258626639587624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7113355257670457498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa05d893967ddc42baf0886502e7b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1001 &9021019236890875782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94,3 +108,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5624781018156986064, guid: 45bb4e0a40f27df4a9f4b2169b4d697a, type: 3}
   m_PrefabInstance: {fileID: 9021019236890875782}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5953454907776296609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa05d893967ddc42baf0886502e7b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0

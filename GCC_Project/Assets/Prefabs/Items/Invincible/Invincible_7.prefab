@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3657560084115469883}
+  - component: {fileID: -8526333815102181847}
   m_Layer: 0
   m_Name: Invincible_7
   m_TagString: Untagged
@@ -32,6 +33,19 @@ Transform:
   - {fileID: 2929805928046902780}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-8526333815102181847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5738168795208193740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa05d893967ddc42baf0886502e7b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1001 &2793267456741501147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98,3 +112,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1039046235759957287, guid: 0101de4c42cff4e4cb5268581b40ce7a, type: 3}
   m_PrefabInstance: {fileID: 2793267456741501147}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1222182728275115970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa05d893967ddc42baf0886502e7b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0

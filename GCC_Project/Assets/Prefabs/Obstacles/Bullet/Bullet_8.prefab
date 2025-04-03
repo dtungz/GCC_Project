@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 353400096810928364}
   - component: {fileID: 3198938920570158419}
   - component: {fileID: 234261105813400896}
+  - component: {fileID: 1211156837730532710}
   m_Layer: 0
   m_Name: Triangle (4)
   m_TagString: Untagged
@@ -236,6 +237,18 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
+--- !u!114 &1211156837730532710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5574439261022530266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92e373f8500588445b0ad088cc194445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7603011728089905138
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,6 +260,7 @@ GameObject:
   - component: {fileID: 2490939117921716818}
   - component: {fileID: 5998259146525030299}
   - component: {fileID: 1885458101757350547}
+  - component: {fileID: 8898188696435157210}
   m_Layer: 0
   m_Name: Triangle (3)
   m_TagString: Untagged
@@ -369,6 +383,18 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
+--- !u!114 &8898188696435157210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7603011728089905138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92e373f8500588445b0ad088cc194445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8420092545514111129
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,6 +406,7 @@ GameObject:
   - component: {fileID: 2667718519276052841}
   - component: {fileID: 5421726470924589769}
   - component: {fileID: 793463279981177973}
+  - component: {fileID: 7681148984819871209}
   m_Layer: 0
   m_Name: Triangle (1)
   m_TagString: Untagged
@@ -502,6 +529,18 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
+--- !u!114 &7681148984819871209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420092545514111129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92e373f8500588445b0ad088cc194445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8463164252479702810
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +552,7 @@ GameObject:
   - component: {fileID: 370563498172222006}
   - component: {fileID: 2868699505586587252}
   - component: {fileID: 3536485276228562392}
+  - component: {fileID: 1315066079689960833}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -635,6 +675,18 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
+--- !u!114 &1315066079689960833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463164252479702810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92e373f8500588445b0ad088cc194445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8708172157175461739
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,6 +698,7 @@ GameObject:
   - component: {fileID: 4773906690078328004}
   - component: {fileID: 5851607545215806445}
   - component: {fileID: 2371475330140552087}
+  - component: {fileID: 3545811940304214894}
   m_Layer: 0
   m_Name: Triangle (2)
   m_TagString: Untagged
@@ -768,3 +821,15 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
+--- !u!114 &3545811940304214894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8708172157175461739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92e373f8500588445b0ad088cc194445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

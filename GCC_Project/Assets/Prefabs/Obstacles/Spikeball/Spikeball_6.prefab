@@ -350,6 +350,7 @@ GameObject:
   - component: {fileID: 3080926489434655081}
   - component: {fileID: 7967951083231247282}
   - component: {fileID: 3860912360802045639}
+  - component: {fileID: -8270577938901156979}
   m_Layer: 0
   m_Name: Spikeball_6
   m_TagString: Obstacles
@@ -536,6 +537,18 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &-8270577938901156979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7277824216186958386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92e373f8500588445b0ad088cc194445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7564691919838502927
 GameObject:
   m_ObjectHideFlags: 0

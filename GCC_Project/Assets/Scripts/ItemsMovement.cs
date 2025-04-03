@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleMovement : MonoBehaviour
+public class ItemsMovement : MonoBehaviour
 {
     public float speed = 5f;
     private GameManager gm;
@@ -19,6 +19,5 @@ public class ObstacleMovement : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
     }
 }
