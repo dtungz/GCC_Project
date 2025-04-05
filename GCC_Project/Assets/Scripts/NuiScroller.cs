@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class MidScroller : MonoBehaviour
+public class NuiScroller : MonoBehaviour
 {
-    [SerializeField] private GameObject[] Mids;
-    [SerializeField] private float scrollSpeed = 0.75f;
+    [SerializeField] private GameObject[] Nui;
+    [SerializeField] private float scrollSpeed = 0.5f;
     private float width;
     float getRightMost()
     {
-        float max = Mids[0].transform.position.x;
-        foreach (GameObject go in Mids)
+        float max = Nui[0].transform.position.x;
+        foreach (GameObject go in Nui)
         {
             if (go.transform.position.x > max)
             {
@@ -22,11 +22,11 @@ public class MidScroller : MonoBehaviour
     }
     void Start()
     {
-        width = Mids[0].GetComponent<SpriteRenderer>().bounds.size.x;
+        width = Nui[0].GetComponent<SpriteRenderer>().bounds.size.x;
     }
     void Update()
     {
-        foreach (GameObject mountain in Mids)
+        foreach (GameObject mountain in Nui)
         {
             mountain.transform.position += Vector3.left * scrollSpeed * Time.deltaTime;
             if (mountain.transform.position.x < -width - 1.5f)

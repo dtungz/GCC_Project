@@ -6,48 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ec5feaa6-74c8-4f0b-994a-26c88703d503" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GCC_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GCC_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Invincible/Invincible_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Invincible/Invincible_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Invincible/Invincible_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Invincible/Invincible_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Invincible/Invincible_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Invincible/Invincible_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Invincible/Invincible_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Invincible/Invincible_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Invincible/Invincible_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Invincible/Invincible_5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Invincible/Invincible_6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Invincible/Invincible_6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Invincible/Invincible_7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Invincible/Invincible_7.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Shield/Shield_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Shield/Shield_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Shield/Shield_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Shield/Shield_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Shield/Shield_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Shield/Shield_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Shield/Shield_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Shield/Shield_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Shield/Shield_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Shield/Shield_5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Shield/Shield_6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Shield/Shield_6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Shield/Shield_7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Shield/Shield_7.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Shrinker/Shrinker_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Shrinker/Shrinker_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Shrinker/Shrinker_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Shrinker/Shrinker_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Shrinker/Shrinker_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Shrinker/Shrinker_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Shrinker/Shrinker_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Shrinker/Shrinker_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Shrinker/Shrinker_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Shrinker/Shrinker_5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Shrinker/Shrinker_6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Shrinker/Shrinker_6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Shrinker/Shrinker_7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Shrinker/Shrinker_7.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_10.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_10.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_7.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_8.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_8.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_9.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Bullet/Bullet_9.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_10.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_10.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_7.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_8.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_8.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_9.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Spikeball/Spikeball_9.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObstacleMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObstacleMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DukTofn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DukTofn.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FrontScroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FrontScroller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MidScroller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MidScroller.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +111,8 @@
       <workItem from="1743428066924" duration="3436000" />
       <workItem from="1743437951234" duration="1716000" />
       <workItem from="1743587338852" duration="1801000" />
-      <workItem from="1743672366516" duration="1050000" />
+      <workItem from="1743672366516" duration="1161000" />
+      <workItem from="1743822537463" duration="379000" />
     </task>
     <servers />
   </component>

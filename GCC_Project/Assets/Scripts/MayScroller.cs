@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class FrontScroller : MonoBehaviour
+public class MayScroller : MonoBehaviour
 {
-    [SerializeField] private GameObject[] Fronts;
-    [SerializeField] private float scrollSpeed = 1f;
+    [SerializeField] private GameObject[] May;
+    [SerializeField] private float scrollSpeed = 0.75f;
     private float width;
     float getRightMost()
     {
-        float max = Fronts[0].transform.position.x;
-        foreach (GameObject go in Fronts)
+        float max = May[0].transform.position.x;
+        foreach (GameObject go in May)
         {
             if (go.transform.position.x > max)
             {
@@ -22,11 +22,11 @@ public class FrontScroller : MonoBehaviour
     }
     void Start()
     {
-        width = Fronts[0].GetComponent<SpriteRenderer>().bounds.size.x;
+        width = May[0].GetComponent<SpriteRenderer>().bounds.size.x;
     }
     void Update()
     {
-        foreach (GameObject mountain in Fronts)
+        foreach (GameObject mountain in May)
         {
             mountain.transform.position += Vector3.left * scrollSpeed * Time.deltaTime;
             if (mountain.transform.position.x < -width - 1.5f)
