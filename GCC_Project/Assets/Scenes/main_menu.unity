@@ -292,9 +292,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 214180073}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e9e9686af5e6b54fa1b6cd428fa8fd0, type: 3}
+  m_Script: {fileID: 11500000, guid: c8d476892582c0c4c9acc4b737c5ec8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  normalSize: {x: 1, y: 1, z: 1}
+  underCursorSize: {x: 0.87, y: 0.87, z: 1}
 --- !u!114 &214180078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,6 +365,7 @@ GameObject:
   - component: {fileID: 348868832}
   - component: {fileID: 348868831}
   - component: {fileID: 348868833}
+  - component: {fileID: 348868834}
   m_Layer: 5
   m_Name: Play_button
   m_TagString: Untagged
@@ -483,6 +486,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &348868834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348868829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d476892582c0c4c9acc4b737c5ec8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalSize: {x: 1, y: 1, z: 1}
+  underCursorSize: {x: 0.8, y: 0.8, z: 1}
 --- !u!1001 &348982371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -923,6 +940,7 @@ GameObject:
   - component: {fileID: 808492889}
   - component: {fileID: 808492888}
   - component: {fileID: 808492890}
+  - component: {fileID: 808492891}
   m_Layer: 5
   m_Name: ok_button\
   m_TagString: Untagged
@@ -1043,6 +1061,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &808492891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808492886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d476892582c0c4c9acc4b737c5ec8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalSize: {x: 1, y: 1, z: 1}
+  underCursorSize: {x: 0.8, y: 0.8, z: 1}
 --- !u!1 &822497810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,6 +1162,7 @@ GameObject:
   - component: {fileID: 1057525039}
   - component: {fileID: 1057525038}
   - component: {fileID: 1057525040}
+  - component: {fileID: 1057525041}
   m_Layer: 5
   m_Name: no_button
   m_TagString: Untagged
@@ -1250,6 +1283,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1057525041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057525036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d476892582c0c4c9acc4b737c5ec8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalSize: {x: 1, y: 1, z: 1}
+  underCursorSize: {x: 0.8, y: 0.8, z: 1}
 --- !u!1 &1059643563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1780,6 +1827,7 @@ GameObject:
   - component: {fileID: 1649346034}
   - component: {fileID: 1649346033}
   - component: {fileID: 1649346035}
+  - component: {fileID: 1649346036}
   m_Layer: 5
   m_Name: yes_button
   m_TagString: Untagged
@@ -1900,6 +1948,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1649346036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649346031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d476892582c0c4c9acc4b737c5ec8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalSize: {x: 1, y: 1, z: 1}
+  underCursorSize: {x: 0.8, y: 0.8, z: 1}
 --- !u!1 &1915768341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,6 +2049,7 @@ GameObject:
   - component: {fileID: 1996310681}
   - component: {fileID: 1996310680}
   - component: {fileID: 1996310682}
+  - component: {fileID: 1996310683}
   m_Layer: 5
   m_Name: setting_button
   m_TagString: Untagged
@@ -2107,6 +2170,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1996310683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996310678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d476892582c0c4c9acc4b737c5ec8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalSize: {x: 1, y: 1, z: 1}
+  underCursorSize: {x: 0.87, y: 0.87, z: 1}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
