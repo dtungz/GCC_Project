@@ -20,10 +20,22 @@ public class GameManager : MonoBehaviour
     public float currentScore = 0f;
     public bool isPlaying = false;
     public GameObject gameOverMenu;
+    public GameObject PauseSetting;
     private bool gameStarted = false;
     private bool isGameOver = false;
 
 
+    public void ShowPause()
+    {
+        Time.timeScale = 0f;
+        PauseSetting.SetActive(true);
+    }
+
+    public void ReturnPlay()
+    {
+        Time.timeScale = 1f;
+        PauseSetting.SetActive(false);
+    }
     private void Start()
     {
         currentScore = 0;
@@ -31,8 +43,10 @@ public class GameManager : MonoBehaviour
         isPlaying = false;
         gameStarted = false;
         isGameOver = false;
+        PauseSetting.SetActive(false );
         if(gameOverMenu != null )
             gameOverMenu.SetActive(false);
+
     }
     private void Update()
     {
@@ -61,6 +75,11 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    
+    public void BackMenu()
+    {
+        SceneManager.LoadScene("main_menu");
+    }    
 
     public string PrettyScore()
     {
