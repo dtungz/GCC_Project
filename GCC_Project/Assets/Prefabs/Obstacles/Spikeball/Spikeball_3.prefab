@@ -79,8 +79,21 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.5, y: 0}
-  - {x: 0.5, y: 0}
+  - {x: 0.0009784698, y: -0.66258335}
+  - {x: -0.18107414, y: -0.32073355}
+  - {x: -0.5814228, y: -0.338861}
+  - {x: -0.3671913, y: 0.009280205}
+  - {x: -0.5728359, y: 0.36614323}
+  - {x: -0.18380165, y: 0.34181833}
+  - {x: 0.0054416656, y: 0.6920233}
+  - {x: 0.20393753, y: 0.33406115}
+  - {x: 0.5995369, y: 0.3510809}
+  - {x: 0.38042068, y: 0.013073921}
+  - {x: 0.6073208, y: -0.34188223}
+  - {x: 0.6073208, y: -0.34188223}
+  - {x: 0.1969738, y: -0.31832266}
+  - {x: 0.012062073, y: -0.6687112}
+  - {x: 0.024990082, y: -0.6816397}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -110,8 +123,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 2
 --- !u!114 &-3221236229044904781
 MonoBehaviour:
   m_ObjectHideFlags: 0

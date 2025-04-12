@@ -308,9 +308,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1083276553}
   - component: {fileID: 1083276552}
-  - component: {fileID: 1083276556}
   - component: {fileID: 1083276555}
   - component: {fileID: 1083276554}
+  - component: {fileID: 1083276557}
+  - component: {fileID: 1083276558}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -442,10 +443,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.8
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -457,7 +458,103 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1083276556
+--- !u!82 &1083276557
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083276551}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 352a6a295385fcd47bcc1dcf89b6106f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1083276558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -469,8 +566,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4fbd17a5fd8884bbc9560008d49b70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7.5
-  rb: {fileID: 1083276555}
+  force: 2
+  rb: {fileID: 0}
   isShielded: 0
   isInvincible: 0
   isShrinked: 0
@@ -676,6 +773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentScore: 0
   isPlaying: 0
+  gameOverMenu: {fileID: 0}
 --- !u!4 &1705601915
 Transform:
   m_ObjectHideFlags: 0
@@ -1010,6 +1108,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2700183388662148396, guid: f81297e5526eabc4f87babc511b1ee09, type: 3}
+      propertyPath: scrollSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4290120586382494146, guid: f81297e5526eabc4f87babc511b1ee09, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
@@ -1049,6 +1151,10 @@ PrefabInstance:
     - target: {fileID: 4290120586382494146, guid: f81297e5526eabc4f87babc511b1ee09, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205516284558319920, guid: f81297e5526eabc4f87babc511b1ee09, type: 3}
+      propertyPath: scrollSpeed
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 9093008046582777623, guid: f81297e5526eabc4f87babc511b1ee09, type: 3}
       propertyPath: m_Name

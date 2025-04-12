@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8303065754824332583}
   - component: {fileID: -1919140208840539756}
   - component: {fileID: 8160239875601728655}
+  - component: {fileID: 5217684758602294166}
   m_Layer: 0
   m_Name: Shield_1
   m_TagString: Items
@@ -185,3 +186,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!114 &5217684758602294166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8493392169863812979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6caae99c245b064f92d385cb043f1fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

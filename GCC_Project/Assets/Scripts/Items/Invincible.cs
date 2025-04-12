@@ -11,6 +11,7 @@ public class Invincible : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        GetComponent<AudioSource>().Play();
         if (other.CompareTag("Player"))
         {
             if (pm.isInvincible) return;

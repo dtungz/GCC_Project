@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7277176980204910800}
-  - component: {fileID: 829066680972442593}
+  - component: {fileID: 7798347076276379672}
   m_Layer: 0
   m_Name: Shrinker_2
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 8459679701760945336}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &829066680972442593
+--- !u!114 &7798347076276379672
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,10 +42,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7438724769140393713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fa05d893967ddc42baf0886502e7b20, type: 3}
+  m_Script: {fileID: 11500000, guid: 299a3697d56ab064ba9c8fcf54a47089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
 --- !u!1001 &4281213877897675368
 PrefabInstance:
   m_ObjectHideFlags: 0

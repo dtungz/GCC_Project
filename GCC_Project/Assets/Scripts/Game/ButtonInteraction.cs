@@ -20,9 +20,4 @@ public class ButtonInrteraction : MonoBehaviour, IPointerEnterHandler, IPointerE
     {
         rt.localScale = normalSize;
     }
-
-    public void OnButtonClick()
-    {
-        Debug.Log("Button clicked");
-    }
 }
