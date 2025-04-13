@@ -1,37 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections;
 
 public class ObstacleTrigger : MonoBehaviour
 {
     private PlayerManager pm;
-    IEnumerator CollsionReset()
-    {
-        yield return new WaitForSeconds(1f);
-        if (!pm.isInvincible) pm.canBeTrigger = true;
-    }
+
     void Start()
     {
-        pm = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        pm = playerObj.GetComponent<PlayerManager>();
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             if (pm.isInvincible) return;
-            if (pm.isShielded && pm.canBeTrigger)
+
+            if (pm.isShielded)
             {
-                pm.canBeTrigger = false;
-                StartCoroutine(CollsionReset());
-                pm.isShielded = false;
+                StartCoroutine(DisableShield());
                 return;
             }
-            else
-            {
-                Time.timeScale = 0;
-                GameManager.Instance.GameOver();
-            }
+
+            Time.timeScale = 0f;
+            GameManager.Instance.GameOver();
         }
+    }
+
+    private IEnumerator DisableShield()
+    {
+        yield return new WaitForSeconds(1f);
+        pm.isShielded = false;
     }
 }
