@@ -1,12 +1,14 @@
 using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
     public GameObject mainMenu;
     public GameObject settingMenu;
     public GameObject quitMenu;
+    public TextMeshProUGUI highScoreTMP;
 
 
     public void ShowSettingMenu()
@@ -14,6 +16,8 @@ public class UIManager : MonoBehaviour
         mainMenu.SetActive(false);
         settingMenu.SetActive(true);
         quitMenu.SetActive(false);
+        
+
     }
 
 
@@ -29,6 +33,9 @@ public class UIManager : MonoBehaviour
         mainMenu.SetActive(true);
         settingMenu.SetActive(false);
         quitMenu.SetActive(false);
+        int maxScore = PlayerPrefs.GetInt("MaxScore", 0);
+        if (highScoreTMP != null)
+            highScoreTMP.text = maxScore.ToString();
     }
 
     public void QuitGame()
