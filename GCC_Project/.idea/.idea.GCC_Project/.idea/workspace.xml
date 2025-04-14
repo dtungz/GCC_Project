@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5feaa6-74c8-4f0b-994a-26c88703d503" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacle/ObstacleTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacle/ObstacleTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" afterDir="false" />
-    </list>
+    <list default="true" id="ec5feaa6-74c8-4f0b-994a-26c88703d503" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +111,7 @@
       <workItem from="1743943559724" duration="3487000" />
       <workItem from="1744250267279" duration="154000" />
       <workItem from="1744438259327" duration="5976000" />
-      <workItem from="1744542159663" duration="322000" />
+      <workItem from="1744542159663" duration="611000" />
     </task>
     <servers />
   </component>
