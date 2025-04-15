@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    public float force = 15f;
     [SerializeField] private Rigidbody2D rb;
 
     public bool isShielded;
