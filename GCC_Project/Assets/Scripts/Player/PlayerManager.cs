@@ -12,10 +12,12 @@ public class PlayerManager : MonoBehaviour
     private Vector3 originalScale;
     private Coroutine invincibleCoroutine;
     private Coroutine shrinkCoroutine;
+    private AudioSource audioSource;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
         isShielded = false;
         isInvincible = false;
         isShrinked = false;
@@ -41,9 +43,9 @@ public class PlayerManager : MonoBehaviour
     {
         if (Input.GetButton("Jump"))
         {
-            rb.gravityScale = -1;
+            rb.gravityScale = -1.5f;
         }
-        else rb.gravityScale = 1;   
+        else rb.gravityScale = 1.5f;   
     }
 
     private IEnumerator ShrinkReset()
@@ -66,5 +68,13 @@ public class PlayerManager : MonoBehaviour
         yield return new WaitForSeconds(8f);
         isInvincible = false;
         invincibleCoroutine = null;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)    
+    {
+        if (other.CompareTag("Obstacles"))
+        {
+            audioSource.Play();
+        }
     }
 }

@@ -346,7 +346,6 @@ GameObject:
   m_Component:
   - component: {fileID: 861657831302011297}
   - component: {fileID: 914044822427591493}
-  - component: {fileID: 6691176376420035422}
   - component: {fileID: 2198055134044385982}
   - component: {fileID: 5631201744698718716}
   - component: {fileID: -3888478602642533575}
@@ -434,18 +433,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &6691176376420035422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4993402788222416186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92e373f8500588445b0ad088cc194445, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &2198055134044385982
 Rigidbody2D:
   serializedVersion: 4
