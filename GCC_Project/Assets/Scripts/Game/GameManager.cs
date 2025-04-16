@@ -94,6 +94,8 @@ public class GameManager : MonoBehaviour
         }
         if (highScoreTMP != null)
             highScoreTMP.text = "HighScore : " + maxScore.ToString();
+        if (scoreTMP != null)
+            scoreTMP.gameObject.SetActive(false);
         if (currentScoreTMP != null)
             currentScoreTMP.text = PrettyScore();
 
@@ -104,11 +106,14 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
+        if (scoreTMP != null)
+            scoreTMP.gameObject.SetActive(true );
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     
     public void BackMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("main_menu");
     }    
 
