@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using Debug = System.Diagnostics.Debug;
 
 public class ObstacleTrigger : MonoBehaviour
 {
@@ -22,7 +23,6 @@ public class ObstacleTrigger : MonoBehaviour
                 StartCoroutine(DisableShield());
                 return;
             }
-
             Time.timeScale = 0f;
             GameManager.Instance.GameOver();
         }
