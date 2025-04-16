@@ -1734,7 +1734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1083276552
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1986,7 +1986,6 @@ MonoBehaviour:
   isShielded: 0
   isInvincible: 0
   isShrinked: 0
-  canBeTrigger: 0
 --- !u!1 &1111476127
 GameObject:
   m_ObjectHideFlags: 0
@@ -2080,7 +2079,7 @@ GameObject:
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1200573074
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2558,6 +2557,7 @@ MonoBehaviour:
   StopButton: {fileID: 1054285671}
   highScoreTMP: {fileID: 1744003708}
   currentScoreTMP: {fileID: 2091432528}
+  scoreTMP: {fileID: 0}
 --- !u!4 &1705601915
 Transform:
   m_ObjectHideFlags: 0
