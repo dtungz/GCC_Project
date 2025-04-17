@@ -43,9 +43,9 @@ public class PlayerManager : MonoBehaviour
     {
         if (Input.GetButton("Jump"))
         {
-            rb.gravityScale = -2f;
+            rb.gravityScale = -1.5f;
         }
-        else rb.gravityScale = 2f;   
+        else rb.gravityScale = 1.5f;   
     }
 
     private IEnumerator ShrinkReset()
@@ -68,13 +68,5 @@ public class PlayerManager : MonoBehaviour
         yield return new WaitForSeconds(8f);
         isInvincible = false;
         invincibleCoroutine = null;
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)    
-    {
-        if (other.CompareTag("Obstacles"))
-        {
-            audioSource.Play();
-        }
     }
 }
