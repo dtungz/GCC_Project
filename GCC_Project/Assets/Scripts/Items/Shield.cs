@@ -6,17 +6,17 @@ public class Shield : MonoBehaviour
 
     void Start()
     {
-        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-        pm = playerObj.GetComponent<PlayerManager>();
+        //GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        //pm = playerObj.GetComponent<PlayerManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            if (!pm.isShielded)
+            if (!GameObject.Find("Player").GetComponent<PlayerManager>().isShielded)
             {
-                pm.isShielded = true;
+                GameObject.Find("Player").GetComponent<PlayerManager>().isShielded = true;
             }
             Destroy(gameObject);
         }
