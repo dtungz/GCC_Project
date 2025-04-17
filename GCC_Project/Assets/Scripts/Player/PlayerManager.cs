@@ -43,9 +43,9 @@ public class PlayerManager : MonoBehaviour
     {
         if (Input.GetButton("Jump"))
         {
-            rb.gravityScale = -1.5f;
+            rb.gravityScale = -2f;
         }
-        else rb.gravityScale = 1.5f;   
+        else rb.gravityScale = 2f;   
     }
 
     private IEnumerator ShrinkReset()
