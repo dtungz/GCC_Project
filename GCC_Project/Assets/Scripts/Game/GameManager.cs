@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -30,6 +30,10 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI highScoreTMP;
     public TextMeshProUGUI currentScoreTMP;
     public TextMeshProUGUI scoreTMP;
+    public float moveSpeed = 5f; //3 dòng dưới đây để chỉnh tốc độ game càng ngày càng nhanh
+    public float speedIncreaseRate = 0.1f; 
+    public float maxSpeed = 20f; 
+
 
 
 
@@ -69,6 +73,8 @@ public class GameManager : MonoBehaviour
         if(isPlaying)
         {
             currentScore += Time.deltaTime;
+            moveSpeed += speedIncreaseRate * Time.deltaTime;
+            moveSpeed = Mathf.Clamp(moveSpeed, 0f, maxSpeed);
             if (scoreTMP != null)
                 scoreTMP.text = "Score: " + PrettyScore();
         }
