@@ -12,12 +12,10 @@ public class PlayerManager : MonoBehaviour
     private Vector3 originalScale;
     private Coroutine invincibleCoroutine;
     private Coroutine shrinkCoroutine;
-    private AudioSource audioSource;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        audioSource = GetComponent<AudioSource>();
         isShielded = false;
         isInvincible = false;
         isShrinked = false;

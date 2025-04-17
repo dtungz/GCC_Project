@@ -1,7 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using UnityEditor.Rendering;
-using Debug = System.Diagnostics.Debug;
 
 public class ObstacleTrigger : MonoBehaviour
 {
@@ -10,31 +8,44 @@ public class ObstacleTrigger : MonoBehaviour
 
     void Start()
     {
-        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-        pm = playerObj.GetComponent<PlayerManager>();
+        pm = GameObject.Find("Player").GetComponent<PlayerManager>();
         audio = GetComponent<AudioSource>();
+        if (audio == null)
+        {
+            Debug.LogWarning("AudioSource không được gắn vào ObstacleTrigger.");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-        {
-            if (pm.isInvincible) return;
+        if (!other.CompareTag("Player")) return;
 
-            if (pm.isShielded)
-            {
-                StartCoroutine(DisableShield());
-                return;
-            }
-            audio.Play();
-            Time.timeScale = 0f;
-            GameManager.Instance.GameOver();
+        Debug.Log("Trigger với Player!");
+
+        if (pm.isInvincible)
+        {
+            return;
         }
+
+        if (pm.isShielded)
+        {
+            Debug.Log("Player có khiên, hấp thụ va chạm.");
+            StartCoroutine(DisableShield());
+            return;
+        }
+
+        Debug.Log("Player không có khiên hay bất tử -> Game Over!");
+        // Nếu bạn cần AudioSource, kiểm tra lại xem có null không
+        if (audio != null) audio.Play();
+
+        Time.timeScale = 0f;
+        GameManager.Instance.GameOver();
     }
 
     private IEnumerator DisableShield()
     {
         yield return new WaitForSeconds(1f);
         pm.isShielded = false;
+        Debug.Log("Khiên đã tắt sau 1 giây.");
     }
 }
