@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -48,10 +49,16 @@ public class GameManager : MonoBehaviour
 
     public void ReturnPlay()
     {
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         PauseSetting.SetActive(false);
-        if (PressSpace == null)
-            PressSpace.SetActive(true);
+        //if (PressSpace == null)
+        //    PressSpace.SetActive(true);
+        if(isPlaying)
+            Time.timeScale = 1f;
+        else
+        {
+            PressSpace.SetActive(true );
+        }
     }
     private void Start()
     {
