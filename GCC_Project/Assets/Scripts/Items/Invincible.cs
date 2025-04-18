@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Invincible : MonoBehaviour
 {
-    private PlayerManager pm;
+    //private PlayerManager pm;
     void Start()
     {
-        pm = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
+        //pm = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         GetComponent<AudioSource>().Play();
         if (other.CompareTag("Player"))
         {
-            if (pm.isInvincible) return;
-            else pm.isInvincible= true;
+            if (GameObject.Find("Player").GetComponent<PlayerManager>().isInvincible) return;
+            else GameObject.Find("Player").GetComponent<PlayerManager>().isInvincible = true;
             Destroy(this.gameObject);
         }
     }
