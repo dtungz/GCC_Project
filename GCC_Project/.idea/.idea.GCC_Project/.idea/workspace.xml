@@ -7,8 +7,12 @@
     <list default="true" id="ec5feaa6-74c8-4f0b-994a-26c88703d503" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GCC_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GCC_Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DukTofn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DukTofn.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacle/ObstacleTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacle/ObstacleTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +50,23 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="QodanaHighlightedReportService">
+    <option name="localRunNotPublishedPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="C:\Users\T\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
+        <option name="reportGuid" value="06b4c38e-abeb-4b9d-b915-1b1c08c9852b" />
+        <option name="reportName" value="GCC_Project/qodana/2025-04-20" />
+      </LocalReportPersistedInfo>
+    </option>
+  </component>
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\T\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="06b4c38e-abeb-4b9d-b915-1b1c08c9852b" reportId="GCC_Project/qodana/2025-04-20" />
+    </option>
+  </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Unity\Unity Hub\2022.3.60f1\Editor\Unity.exe" />
@@ -123,6 +144,7 @@
       <workItem from="1744881590931" duration="4428000" />
       <workItem from="1744904454850" duration="1939000" />
       <workItem from="1744962246702" duration="3000" />
+      <workItem from="1745142972884" duration="1920000" />
     </task>
     <servers />
   </component>

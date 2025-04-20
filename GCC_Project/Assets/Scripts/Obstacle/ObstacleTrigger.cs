@@ -3,17 +3,17 @@ using System.Collections;
 
 public class ObstacleTrigger : MonoBehaviour
 {
-    //private PlayerManager pm;
-    //private AudioSource audio;
+    private PlayerManager pm;
+    private AudioSource audio;
 
     void Start()
     {
-        //pm = GameObject.Find("Player").GetComponent<PlayerManager>();
-        //audio = GetComponent<AudioSource>();
-        //if (audio == null)
-        //{
-        //    Debug.LogWarning("AudioSource không được gắn vào ObstacleTrigger.");
-        //}
+        pm = GameObject.Find("Player").GetComponent<PlayerManager>();
+        audio = GetComponent<AudioSource>();
+        if (audio == null)
+        {
+            Debug.LogWarning("AudioSource không được gắn vào ObstacleTrigger.");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -35,8 +35,7 @@ public class ObstacleTrigger : MonoBehaviour
         }
 
         Debug.Log("Player không có khiên hay bất tử -> Game Over!");
-        // Nếu bạn cần AudioSource, kiểm tra lại xem có null không
-        //if (audio != null) audio.Play();
+        if (audio != null) audio.Play();
 
         Time.timeScale = 0f;
         GameManager.Instance.GameOver();

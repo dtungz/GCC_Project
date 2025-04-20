@@ -34,11 +34,8 @@ public class GameManager : MonoBehaviour
     public float moveSpeed = 5f; //3 dòng dưới đây để chỉnh tốc độ game càng ngày càng nhanh
     public float speedIncreaseRate = 0.1f; 
     public float maxSpeed = 20f; 
-
-
-
-
-
+    private bool hasPlayedBGM = false;
+    
     public void ShowPause()
     {
         Time.timeScale = 0f;
@@ -91,6 +88,11 @@ public class GameManager : MonoBehaviour
             isPlaying = true;
             Time.timeScale = 1f;
             gameStarted = true;
+        }
+        if (!hasPlayedBGM)
+        {
+            GetComponent<AudioSource>().Play();
+            hasPlayedBGM = true;
         }
     }
     public void GameOver()
